@@ -1,7 +1,5 @@
 // ==========================================================
-// 屋台注文システム 共通処理
-// 注文画面(order.html)と厨房画面(kitchen.html)の両方から
-// このファイルを読み込んで使います。
+// 英語部注文システム 共通処理
 // ==========================================================
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
@@ -20,8 +18,7 @@ import { firebaseConfig } from "./firebase-config.js";
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-// 商品一覧(注文ボタンに表示される名前)
-// 商品を変えたいときは、ここの文字列を書き換えるだけでOKです
+// 商品一覧
 export const PRODUCTS = [
   "しお",
   "カレー",
